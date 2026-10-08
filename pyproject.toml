@@ -1,0 +1,20 @@
+[project]
+name = "hyundai-ai-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HyeonsuRyu", email = "hsoo112149@gmailcom" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "gradio>=6.29.0",
+    "pydentic>=0.0.1.dev3",
+]
+
+[project.scripts]
+hyundai-ai-chatbot = "hyundai_ai_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
